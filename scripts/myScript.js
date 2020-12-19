@@ -30,10 +30,12 @@ function postFormData() {
         redirect: 'follow', // manual, *follow, error
         // referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
         //data ={email:"nitingupta@gmail.com",name:"Nitin Gupta",password:"nitin@123"}
-        body: JSON.stringify(data) // body data type must match "Content-Type" header
-    })
-        .then(response => response.json())
-        .then(data => console.log(data));
+        body: JSON.stringify({email:"nitingupta@gmail.com",name:"Nitin Gupta",password:"nitin@123"}) // body data type must match "Content-Type" header
+    });
+    // .then(res => res.json())
+    // .then(res => {
+    //     document.getElementById("random").textContent = res[0].status;
+    // });
 
 }
 
