@@ -49,5 +49,5 @@ function formData(){
     return data;
 }
 
-document.getElementById("random").addEventListener("click",testGS);
+// document.getElementById("random").addEventListener("click",testGS);
 document.getElementById("signup").addEventListener("click",postFormData);
