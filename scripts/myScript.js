@@ -31,7 +31,7 @@ function postFormData() {
         redirect: 'follow', // manual, *follow, error
         // referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
         //data ={email:"nitingupta@gmail.com",name:"Nitin Gupta",password:"nitin@123"}
-        body: JSON.stringify({data:data}) // body data type must match "Content-Type" header
+        body: JSON.stringify(data) // body data type must match "Content-Type" header
       });
 
 }
